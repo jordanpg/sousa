@@ -7,16 +7,16 @@ export const navigation = [
   {
     path: '/',
     name: 'Following',
-    Component: Heart
+    Component: Heart,
   },
   {
     path: '/options',
     name: 'Options',
-    Component: Wrench
-  }
+    Component: Wrench,
+  },
 ] satisfies NavRoute[];
 
 export default {
   '/': Main,
-  '/options': Options
+  '/options': Options,
 };
