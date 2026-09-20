@@ -24,3 +24,8 @@ web-ext.config.ts
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code local configurations and session tracking
+.claude/settings.local.json
+.claude/worktrees/
+CLAUDE.local.md
