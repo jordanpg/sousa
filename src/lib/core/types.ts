@@ -5,7 +5,5 @@ export interface NavRoute {
   path: string;
   name: string;
   active?: string;
-  Component: Component<
-    Record<string, unknown> & { class?: ClassValue | undefined | null }
-  >;
+  Component: Component<Record<string, unknown> & { class?: ClassValue | undefined | null }>;
 }

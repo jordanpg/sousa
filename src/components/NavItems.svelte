@@ -14,7 +14,7 @@
   {#each routes as { path, name, Component, active: activePath } (name)}
     <li>
       <a
-        class="tooltip tooltip-right btn btn-circle"
+        class="tooltip btn tooltip-right btn-circle"
         data-tip={name}
         href={path}
         use:link
