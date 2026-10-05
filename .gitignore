@@ -29,3 +29,10 @@ web-ext.config.ts
 .claude/settings.local.json
 .claude/worktrees/
 CLAUDE.local.md
+
+# Local environment variables
+.env
+.env.*
+
+# Do not ignore template files
+!.env.example

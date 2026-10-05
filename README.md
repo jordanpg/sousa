@@ -1,6 +1,6 @@
-# WXT + Svelte
+# sousa: super original unoriginal stream alerter
 
-This template should help get you started developing with Svelte in WXT.
+somewhere there is a stream happening and you maybe want to know about it
 
 ## Recommended IDE Setup
 

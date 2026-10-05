@@ -1,3 +1,4 @@
+// @ts-check
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
@@ -36,6 +37,8 @@ export default defineConfig(
   {
     // Override or add rule settings here, such as:
     // 'svelte/button-has-type': 'error'
-    rules: {},
+    rules: {
+      '@typescript-eslint/no-empty-object-type': 'off',
+    },
   },
 );

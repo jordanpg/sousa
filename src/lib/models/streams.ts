@@ -1,5 +1,7 @@
+export type ProviderKey = 'picarto' | 'piczel' | 'twitch' | 'youtube';
+
 export interface Stream<
-  P extends string,
+  P extends ProviderKey,
   D extends Record<string, unknown> = Record<string, unknown>,
 > {
   providerId: P;
@@ -13,7 +15,7 @@ export interface Stream<
 }
 
 export interface Channel<
-  P extends string,
+  P extends ProviderKey,
   D extends Record<string, unknown> = Record<string, unknown>,
 > {
   providerId: P;
