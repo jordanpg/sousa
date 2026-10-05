@@ -1,5 +1,6 @@
 import type { ProviderKey } from '@/lib/models/streams';
 import { inject, injectable } from 'inversify';
+import StorageConstants from '../constants';
 import type { IProviderStatusRepository } from '../interfaces';
 import { storageKeyProviderFactoryId, type StorageKeyProviderFactory } from '../key-service';
 import StorageProviderBase from '../storage-provider-base';
@@ -15,6 +16,6 @@ export default class ProviderStatusRepository<P extends ProviderKey>
     @inject(storageKeyProviderFactoryId)
     public readonly keyProviderFactory: StorageKeyProviderFactory,
   ) {
-    super(keyProviderFactory(`provider:${provider}`, 'local'));
+    super(keyProviderFactory(`provider:${provider}`, StorageConstants.Areas.ProviderStatusArea));
   }
 }

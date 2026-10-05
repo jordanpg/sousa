@@ -1,7 +1,6 @@
 import type { StorageSchema } from '@/lib/core/interfaces/storage';
+import type { ProviderState } from '@/lib/models/streams';
 
-/** Current provider state (idle, fetching, error) */
-export type ProviderState = 'idle' | 'fetching' | 'error';
 /** Describes the current state of a provider */
 export interface ProviderStatusStorage extends StorageSchema {
   state: ProviderState;

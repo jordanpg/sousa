@@ -1,3 +1,5 @@
+/** Current provider state (idle, fetching, error) */
+export type ProviderState = 'idle' | 'fetching' | 'error';
 export type ProviderKey = 'picarto' | 'piczel' | 'twitch' | 'youtube';
 
 export interface Stream<
